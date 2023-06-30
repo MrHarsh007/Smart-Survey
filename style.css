@@ -5,6 +5,23 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
   }
+  @media (max-width: 480px) {
+    .container {
+        max-width: 300px;
+        margin-top: 50px;
+        padding: 15px;
+    }
+    
+    .company-name {
+        font-size: 20px;
+    }
+    
+    .input-field,
+    .login-button {
+        margin-top: 15px;
+        padding: 8px;
+    }
+}
   body{
     background-color: rgb(141, 141, 221);
   }
