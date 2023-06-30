@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            width: 700px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Blood Bank Survey</h2>
+        <form>
+          <label for="donatedBefore">Have you ever donated blood before?</label>
+          <input type="checkbox" id="donatedBefore" name="donatedBefore">
+      
+          <label for="frequency">How frequently do you donate blood?</label>
+          <select id="frequency" name="frequency">
+            <option value="rarely">Rarely</option>
+            <option value="occasionally">Occasionally</option>
+            <option value="regularly">Regularly</option>
+          </select>
+      
+          <label for="eligibility">Are you aware of the eligibility criteria for blood donation?</label>
+          <input type="radio" id="eligibilityYes" name="eligibility" value="yes">
+          <label for="eligibilityYes">Yes</label>
+          <input type="radio" id="eligibilityNo" name="eligibility" value="no">
+          <label for="eligibilityNo">No</label>
+      
+          <label for="age">What is your age?</label>
+          <input type="number" id="age" name="age">
+      
+          <label for="bloodType">What is your blood type?</label>
+          <input type="text" id="bloodType" name="bloodType">
+      
+          <label for="healthCondition">Do you have any health conditions that may affect blood donation?</label>
+          <textarea id="healthCondition" name="healthCondition"></textarea>
+      
+          <label for="preferredTime">When do you prefer to donate blood?</label>
+          <select id="preferredTime" name="preferredTime">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+      
+          <label for="contactNumber">What is your contact number?</label>
+          <input type="tel" id="contactNumber" name="contactNumber">
+      
+          <label for="email">What is your email address?</label>
+          <input type="email" id="email" name="email">
+      
+          <label for="location">Which location are you based in?</label>
+          <input type="text" id="location" name="location">
+      
+          <label for="availability">Are you available for emergency blood donations?</label>
+          <input type="radio" id="availabilityYes" name="availability" value="yes">
+          <label for="availabilityYes">Yes</label>
+          <input type="radio" id="availabilityNo" name="availability" value="no">
+          <label for="availabilityNo">No</label>
+      
+          <label for="preferredContact">How would you prefer to be contacted for blood donation requests?</label>
+          <input type="checkbox" id="preferredContactPhone" name="preferredContact" value="phone">
+          <label for="preferredContactPhone">Phone</label>
+          <input type="checkbox" id="preferredContactEmail" name="preferredContact" value="email">
+          <label for="preferredContactEmail">Email</label>
+          <input type="checkbox" id="preferredContactSMS" name="preferredContact" value="sms">
+          <label for="preferredContactSMS">SMS</label>
+      
+          <label for="comments">Any additional comments or suggestions?</label>
+          <textarea id="comments" name="comments"></textarea>
+      
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      
+      
+      
+</body>
+</html>

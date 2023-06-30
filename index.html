@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <script>
+        function validateLogin() {
+            // Get the email and password input values
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Perform validation (example: check if email and password match)
+            if (email === 'admin' && password === 'admin') {
+                // Redirect to the main page
+                console.log('Login successful'); // Debug statement
+                window.location.href = 'main.html';
+            } else {
+                console.log('Invalid email or password'); // Debug statement
+                alert('Invalid email or password');
+            }
+        }
+    </script>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            /* background-color: #ccc; */
+            border-radius: 50%;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        
+        .company-name {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        
+        .input-field {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .login-button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #337ab7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .forgot-password,
+        .create-account {
+            margin-top: 10px;
+        }
+        
+        .forgot-password,
+        .create-account {
+            margin-top: 10px;
+            display: inline-block;
+            background-color: transparent;
+            border: none;
+            color: #337ab7;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="main.html">
+
+            <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/SmartSurvey_Logo_Round.png" alt=""></div>
+            
+        <h2 class="company-name">Blood Bank Survey</h2>
+        <input type="email" class="input-field" placeholder="Email">
+        <input type="password" class="input-field" placeholder="Password">
+        <button onclick="validateLogin()" class="login-button">Login</button>
+        <br>
+        <a href="reset.html" class="forgot-password">Forgot Password?</a>
+        
+        <br>
+        <br>
+        <a href="newAccount.html" class="create-account">Don't have an account? Create Account</a>
+    </form>
+    </div>
+</body>
+
+</html>
